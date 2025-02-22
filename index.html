@@ -1,0 +1,102 @@
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helping for Poor</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: url("o.jpg");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .form-container {
+            background-image: url("i.jpg");
+            background-size: cover;
+            padding: 20px 30px;
+            border-radius: 100px;
+            box-shadow: 0 10px 20px rgba(122, 75, 75, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #23bd51;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            font-size: 16px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="file"] {
+            background: #f0f0f0;
+        }
+
+        button {
+            background: linear-gradient(135deg, #74ebd5, #acb6e5);
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        button:hover {
+            transform: scale(1.1);
+        }
+
+        .container img {
+            max-width: 100%;
+            border-radius: 12px;
+            margin-top: 10px;
+        }
+
+        h4 {
+            margin-bottom: 20px;
+            text-align: center;
+            color: #23bd51;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Please Help Poor</h1>
+        <h2>Submit Payment Details</h2>
+        <form method="POST" action="submit.php" enctype="multipart/form-data">
+            <input type="text" name="name" placeholder="Enter your name" required>
+            <input type="email" name="email" placeholder="Enter your email" required>
+            <div class="container">
+                <img src="l.jpg" alt="Donation Logo">
+            </div>
+            <label for="paymentFile">Upload Payment File:</label>
+            <input type="file" name="paymentFile" accept=".pdf,.doc,.docx" required>
+            <button type="submit">Submit</button>
+        </form>
+        <h4>If any Queries? <br> Contact us: 6281770026 <br> lokeshdevarakonda143@gmail.com</h4>
+    </div>
+</body>
+
+</html>
